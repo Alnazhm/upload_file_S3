@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузка файлов</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data" action="">
+        {% csrf_token %}
+        <input type="file" name="file" accept="*" required>
+    <div>
+         <button type="submit">Отправить</button>
+    </div>
+
+    </form>
+</body>
+</html>

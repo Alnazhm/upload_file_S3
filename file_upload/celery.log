@@ -1,0 +1,4 @@
+[2023-10-13 04:36:14,557: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2023-10-13 04:36:14,563: INFO/MainProcess] mingle: searching for neighbors
+[2023-10-13 04:36:15,572: INFO/MainProcess] mingle: all alone
+[2023-10-13 04:36:15,586: INFO/MainProcess] celery@macbooks-MacBook-Pro.local ready.
