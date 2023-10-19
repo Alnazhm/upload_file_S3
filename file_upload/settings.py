@@ -32,7 +32,15 @@ ALLOWED_HOSTS = []
 # AWS S3 settings
 DEFAULT_FILE_STORAGE = "storages.backends.s3.S3Storage"
 CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
-
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",  # Redis server address
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        },
+    }
+}
 
 
 # Application definition
